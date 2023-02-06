@@ -75,7 +75,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: deploy
     steps:
-      - name: send message to bot
+      - name: send message
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
